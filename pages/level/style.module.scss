@@ -1,0 +1,62 @@
+.level{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+    gap: 40px;
+    margin-top: 6rem;
+}
+
+.level .buttons .main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    gap: 1rem;
+    background: #fff;
+    border: 1px solid #DEE6ED;
+    border-radius: 20px;
+    width: 360px;
+    height: 60px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.078));
+}
+
+.level .input{
+    width: 880px;
+    height: 60px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.078));
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    position: relative;
+}
+
+.level .input input{
+    width: 864px;
+    height: 60px;
+    border: 1px solid #DEE6ED;
+    border-radius: 20px;
+    outline: none;
+    padding: 0 1rem;
+    font-size: larger;
+    color: #333;
+}
+
+.level .input button{
+    position: absolute;
+    width: 436px;
+    height: 60px;
+    right: -5.5rem;
+    top: 0px;
+    background: #333333;
+    color: #fff;
+    box-shadow: inset 0px 4px 20px rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    outline: none;
+    border: none;
+    clip-path: polygon(25% 0%, 75% 0%, 82% 51%, 75% 100%, 25% 100%, 19% 50%);
+
+}

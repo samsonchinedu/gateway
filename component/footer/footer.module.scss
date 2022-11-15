@@ -1,0 +1,45 @@
+@import url('http://fonts.cdnfonts.com/css/clash-display');
+
+.footer{
+    background: #000;
+    display: flex;
+    flex-direction: row;
+    padding: 6rem 5rem 10rem 5rem;
+    color: #fff;
+    gap: 20rem;
+
+    .website{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        .icons{
+            font-size: 2.5rem;
+            display: flex;
+            flex-direction: row;
+            gap: 3rem;
+            margin-left: 1.5rem;
+        }
+    }
+
+    .details{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        gap: 80px;
+
+        h3{
+            font-family: 'Clash Display', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            padding-bottom: 1.5rem;
+            cursor: default;
+        }
+        
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            cursor: default;
+        }
+    }
+}
