@@ -1,7 +1,14 @@
 import {HiGift} from 'react-icons/hi'
 import styles from '../smart/smart.module.scss'
+import { useRouter } from 'next/router'
 
 const SmartTask = () => {
+    const router = useRouter()
+
+    const onButton = () => {
+        router.push('/mission')
+    }
+
     return (
         <div>
             <div className={styles.wrap}>
@@ -20,7 +27,7 @@ const SmartTask = () => {
                             <span>200 reward points</span>
                         </div>
                     </div>
-                    <button className={styles.span}>start this Adventure</button>
+                    <button className={styles.span} onClick={onButton}>start this Adventure</button>
                 </div>
             </div>
         </div>

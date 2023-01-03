@@ -1,0 +1,140 @@
+@import url('http://fonts.cdnfonts.com/css/clash-display');
+
+.sidebar{
+    margin-top: 2.5rem;
+    position: absolute;
+    width: 405px;
+    height: 492px;
+
+    ::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .container{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+        width: 405px;
+        height: 100%;
+        left: 0px;
+        top: 0px;
+
+        .topic{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 16px; 
+
+            h1{
+                font-family: 'Clash Display', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                color: #333333;
+                width: 286px;
+                height: 64px;
+            }
+        }
+
+        .modules{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 16px;
+            width: 400px;
+            height: 1166px;
+            order: 1;
+
+            h1{
+                font-family: 'Clash Display', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 40px;
+                margin-top: -1rem;
+                margin-bottom: -2rem;
+            }
+
+            .frames{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 24px;
+                width: 400px;
+                height: 1110px;
+
+                .header{
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    font-family: 'Cera Pro', sans-serif;
+                    margin-bottom: -3rem;
+
+                    h5{
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 28px;
+                        color: #333333;
+                    }
+
+                    .fang{
+                        color: #666666;
+                        font-size: 22px;
+                        font-weight: 100;
+                    }
+                }
+
+                .column{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    margin-top: 1rem;
+                    gap: 1.5rem;
+                    width: 350px;
+                    order: 1;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+
+                    div{
+                        width: 100%;
+                        padding: 16px 10px;
+                        border-radius: 5px;
+                        cursor: default;
+                    }
+
+                    div:hover{
+                        background: #f0f0f0;
+                    }
+
+                    .active:hover{
+                        background: #333333;
+                    }
+
+                    .active{
+                        font-weight: 700;
+                        font-size: 14px;
+                        line-height: 22px;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        gap: 10px;
+                        background: #333333;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

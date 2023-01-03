@@ -1,0 +1,305 @@
+@import url('http://fonts.cdnfonts.com/css/clash-display');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+.main{
+    width: 68%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    margin-bottom: 15rem;
+
+    ::-webkit-scrollbar{
+        width: 0;
+    } 
+
+    .container{
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-bottom: 10rem;
+
+        .points{
+            display: flex;
+            flex-direction: row;
+            gap: 10rem;
+            width: 100%;
+            padding-bottom: 3rem;
+            border-bottom: 2px solid #DEE6ED;
+            
+            .rewards{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 24px;
+                color: #333333;
+    
+                h1{
+                    font-family: 'Clash Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 64px;
+                }
+    
+                .frames{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    padding: 0px;
+                    // gap: 16px;
+                    order: 1;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 28px;
+                    
+                    .frame{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 0 16px;
+                        gap: 10px;
+                        height: 23px;
+                        border-right: 2px solid #DEE6ED;
+                    }
+                    
+                    .frame:last-child{
+                        border: none;
+                    }
+                }
+            }
+            
+            .point{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+                padding: 0px;
+                gap: 16px;
+                margin-top: -4rem;
+                
+                .gift{
+                    font-size: 22px;
+                    color: #22bb33;
+                }
+    
+                p{
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 28px;
+                    color: #666666;
+                }
+            }
+        }
+    
+        .video{
+            padding-bottom: 3rem;
+            margin-top: 3rem;
+            margin-left: 0.2rem;
+            border-bottom: 2px solid #DEE6ED;
+            
+            video{
+                background: #d9d9d9a2;
+                border-radius: 10px;
+                width: 930px; 
+                height: 337px;
+                outline: none;
+            }
+        }
+        
+        .content{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 40px;
+            width: 100%;
+            
+            .frame{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                padding-bottom: 3rem;
+                gap: 5px;
+                color: #333333;
+                border-bottom: 2px solid #DEE6ED;
+                
+                h5{
+                    font-family: 'Clash Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+    
+                .details{
+                    margin-top: -3rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 16px;
+    
+                    p{
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                }
+            }
+    
+            .click{
+                position: absolute;
+                right: 4rem;
+                top: 37rem;
+                width: 250px;
+                height: 56px;
+                background: #333333;
+                outline: none;
+                border: none;
+                color: #ffffff;
+                border-radius: 20px;
+                font-family: 'Montserrat', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: center;
+                transition: all .5s ease-in;
+                cursor: pointer;
+            }
+    
+            button:hover{
+                background: none;
+                border: 2px solid #e8e4e4;
+                color: #333333;
+                transform: translateY(30%);
+                filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.2));
+                box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.033);
+            }
+        }
+
+        .recaps{
+            position: absolute;
+            top: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 24px 24px 40px;
+            gap: 10px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            width: 458px;
+            height: 590px;
+            cursor: default;
+            
+
+            .recap{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0px;
+                gap: 24px;
+                width: 410px;
+                height: 432px;
+
+                h4{
+                    font-family: 'Clash Display', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: -1rem;
+                    text-align: center;
+                    color: #333333;
+                }
+
+                .contracts{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 40px;
+                    width: 410px;
+                    height: 384px;
+                    margin-bottom: 6rem;
+
+                    h3{
+                        color: #333333;
+                        font-weight: 700;
+                        font-size: 25px;
+                        line-height: 28px;
+                        margin-bottom: -2rem;
+                    }
+
+                    .radio{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 0px;
+                        gap: 16px;
+                        // background: #666;
+
+                        .active[type="radio"]{
+                            font: inherit;
+                            color: #fff;
+                            width: 1.80em;
+                            height: 1.15em;
+                            border: 1px solid rgb(225, 5, 5);
+                            border-radius: 50%;
+                            background-color: #fff;
+                            transform: translateY(-0.075em);
+                            display: grid;
+                            place-content: center;
+                        }
+                        .deactive[type="radio"]{
+                            appearance: none;
+                            font: inherit;
+                            color: #fff;
+                            // accent-color: white;
+                            width: 1.90rem;
+                            height: 1.10rem;
+                            border: 1px solid #999;
+                            border-radius: 50%;
+                            background-color: #fff;
+                            transform: translateY(-0.075em);
+                            display: grid;
+                            // place-content: center;
+                        }
+
+                        .blue{
+                            color: #1579e4;
+                        }
+
+                        .black{
+                            color: #000;
+                        }
+                    }
+                }
+
+                .button{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 20px 24px;
+                    gap: 8px;
+                    background: #999999;
+                    border-radius: 10px;
+                    width: 410px;
+                    height: 54px;
+                    border: none;
+                    outline: none;
+                }
+            }
+        }
+    }
+    
+}

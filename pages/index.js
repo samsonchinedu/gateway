@@ -1,12 +1,23 @@
 import Head from "next/head";
 import { TfiAngleLeft, TfiAngleRight } from "react-icons/tfi";
 import styles from "../styles/Home.module.css";
-import Adventure from "./avdenture/index.js";
+import Adventure from "./adventure/index.js";
 import Feature from "./feature/feature.js";
-import Level from "./level/level";
+import Level from "./level/level.js";
 import SmartTask from "./smart/index.js";
+import { useRouter } from 'next/router'
 
 export default function Home() {
+  const router = useRouter()
+  
+  const onProgress = () => {
+    router.push('/progress')
+  }
+
+  const onComplete = () => {
+    router.push('/complete')
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,8 +28,8 @@ export default function Home() {
         <div className={styles.adventures}>
           <div className={styles.adven}>
             <h3 className={styles.active}>All Adventures</h3>
-            <h3>In-Progress</h3>
-            <h3>Completed</h3>
+            <h3 onClick={onProgress}>In-Progress</h3>
+            <h3 onClick={onComplete}>Completed</h3>
           </div>
           <div className={styles.line}></div>
         </div>
